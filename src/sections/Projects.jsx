@@ -15,7 +15,7 @@ const Projects = () => {
     return (
         <section
             onMouseMove={handleMouseMove}
-            className="relative c-space mb-40"
+            className="relative c-space mt-22 mb-40"
             id="projects"
         >
             <h2 className="text-heading">My Selected Projects</h2>

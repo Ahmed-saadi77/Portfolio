@@ -16,7 +16,8 @@ FROM nginx:stable-alpine
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy built react app to nginx folder
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /app/dist /usr/share/nginx/html
+
 
 # Expose port 80 to the outside world
 EXPOSE 80
